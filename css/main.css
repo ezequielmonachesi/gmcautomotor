@@ -4,37 +4,19 @@ body {
     font-family: "Monserrat", sans-serif;
     overflow-x: hidden;
 }
-/*====== FORMATO IMAGEN LETRAS NAVBAR =========*/
-
-#menu a{
-    font-size:16px;
-    font-weight:bolder;
-    color: #3f3f3f;
-}
-
-
 /*====== ancho de mis tramites (siempre diviidir en section para que todo sea fluid. =========*/
 /*======  =========*/
 .carousel{
     margin-top:74px;
 }
-.mtramitesancho{
-    width: 50%;
-    margin: auto;
-    text-align: justify;
+.banner{
+    height: calc(100vh - 74px);
+    object-fit: cover;
 }
-
-/*====== CONTACTOS FONDO =========*/
-/*====== CONTACTO BACKGROUND =========*/
-
-
 #bg-contactos {
     position: relative;
   
 }
-
-
-
 /*====== CONTACTO =========*/
 /*====== formulario =========*/
  
@@ -71,7 +53,7 @@ footer p {
 
 @media (max-width:768px){
     .banner{
-        height: 250px;
+        height: 300px;
         object-fit: cover;
     }
     #intro, #equipo{
@@ -85,15 +67,6 @@ footer p {
         position: relative;
         top: -0px;
     }
-
-    .mtramitesancho{
-        width: 75%;
-        margin: auto;
-        text-align: justify;
-    }
-    
-
-   
 }
 
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 576px =========*/
@@ -103,32 +76,6 @@ footer p {
     .icono-wrap{
         flex-wrap: wrap;
        justify-content: center !important;
-    }
-    
-    .mtramitesancho{
-        width: 75%;
-        margin: auto;
-        text-align: justify;
-    }
-    
-    
-    
-}
-
-/*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 300px =========*/
-/*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
-
-@media (max-width:300px){
-    .icono-wrap{
-        flex-wrap: wrap;
-       justify-content: center !important;
-    }
-    
-    .mtramitesancho{
-        width: 75%;
-        margin: auto;
-        text-align: justify;
-    }
-    
+    }  
     
 }
