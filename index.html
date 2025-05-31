@@ -44,7 +44,7 @@
     />
     <meta name="robots" content="index" />
   </head>
-  <body class="position-absolute">
+  <body>
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
       id="menu"
@@ -88,39 +88,55 @@
         </div>
       </div>
     </nav>
-    <!-- Carrusel -->
-    <div id="controlesCarrusel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="img/slide1.jpg" class="d-block w-100 banner" alt="slide1" />
+    <main class="position-relative">
+      <!-- Carrusel -->
+      <div
+        id="controlesCarrusel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="img/slide1.jpg"
+              class="d-block w-100 banner"
+              alt="slide1"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="img/slide2.jpg"
+              class="d-block w-100 banner"
+              alt="slide2"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="img/slide3.jpg"
+              class="d-block w-100 banner"
+              alt="slide3"
+            />
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="img/slide2.jpg" class="d-block w-100 banner" alt="slide2" />
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="img/slide3.jpg" class="d-block w-100 banner" alt="slide3" />
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#controlesCarrusel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#controlesCarrusel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#controlesCarrusel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#controlesCarrusel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <main>
       <!-- Banner Principal -->
       <section></section>
 
@@ -693,6 +709,7 @@
 
       <section
         class="position-fixed bottom-0 end-0 fs-1 px-3 py-3 px-md-3 py-md-3 px-lg-5 py-lg-4"
+        style="z-index: 2000"
       >
         <a
           href="https://wa.me/5493816345999?text=Dejanos%20tu%20consulta"
@@ -709,7 +726,7 @@
       class="w-100 d-flex align-items-center justify-content-center flex-wrap"
     >
       <p class="fs-5 px-3 pt-3">
-        GMC &copy; Todos los derechos reservados 2023
+        GMC &copy; Todos los derechos reservados 2025
       </p>
       <div id="iconos">
         <a
