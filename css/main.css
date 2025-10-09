@@ -1,81 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 body {
-    font-family: "Monserrat", sans-serif;
-    overflow-x: hidden;
+  font-family: "Monserrat", sans-serif;
+  overflow-x: hidden;
 }
 /*====== ancho de mis tramites (siempre diviidir en section para que todo sea fluid. =========*/
 /*======  =========*/
-.carousel{
-    margin-top:74px;
+.carousel {
+  margin-top: 74px;
 }
-.banner{
-    height: calc(100vh - 74px);
-    object-fit: cover;
+.banner {
+  height: 20rem;
+  object-fit: cover;
+}
+.precio-final {
+  color: #142655;
+}
+.btn-azul {
+  background-image: radial-gradient(circle, #0a4eff, #204273);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-azul:hover {
+  background-image: linear-gradient(to right, #0a4eff, #000000);
+  transform: scale(1.05);
+  color: #fff;
 }
 #bg-contactos {
-    position: relative;
-  
+  position: relative;
 }
 /*====== CONTACTO =========*/
 /*====== formulario =========*/
- 
+
 .img-contacto {
-    background-color: #1b2a4e;
+  background-color: #1b2a4e;
 }
 
 /*====== pie de pagina =========*/
 /*====== footer =========*/
 
 footer {
-    background-color: #1b2a4e;
-    min-height: 100px;
+  background-color: #1b2a4e;
+  min-height: 100px;
 }
 
 footer p {
-    color: #f3f3f3;
-    text-align: center;
-
+  color: #f3f3f3;
+  text-align: center;
 }
 
-#iconos a{
-    font-size: 26px;
-    padding: 0 8xs;
-    color: #f3f3f3;
+#iconos a {
+  font-size: 26px;
+  padding: 0 8xs;
+  color: #f3f3f3;
 }
 
 .novedades {
-    text-align: center;
+  text-align: center;
 }
 
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 768px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 
-@media (max-width:768px){
-    .banner{
-        height: 300px;
-        object-fit: cover;
-    }
-    #intro, #equipo{
-        width: 90% !important;
-    }
-    .servicio-fila {
-        width: 100% !important;
-        text-align: center;
-    }
-    #bg-contactos {
-        position: relative;
-        top: -0px;
-    }
+@media (max-width: 768px) {
+  /* .banner {
+    height: calc(100vh - 43rem);
+    object-fit: cover; */
+}
+#intro,
+#equipo {
+  width: 90% !important;
+}
+.servicio-fila {
+  width: 100% !important;
+  text-align: center;
+}
+#bg-contactos {
+  position: relative;
+  top: -0px;
 }
 
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 576px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 
-@media (max-width:576px){
-    .icono-wrap{
-        flex-wrap: wrap;
-       justify-content: center !important;
-    }  
-    
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
 }
