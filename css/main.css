@@ -67,6 +67,10 @@ footer p {
   text-align: center;
 }
 
+.div-vehiculo {
+  margin-top: 7rem;
+}
+
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 768px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 
