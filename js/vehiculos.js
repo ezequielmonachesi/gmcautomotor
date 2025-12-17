@@ -7,11 +7,18 @@ export const vehiculos = [
     precio: 3500000,
     localidad: "San Miguel de Tucumán",
 
+    // 🔥 Dominio
+    dominio: "ABC123", // ← opcional | si no quiere mostrar, poné null
+
     // 🔥 Combustible
     combustible: {
       nafta: true,
-      gnc: false,
+      gnc: true,
     },
+
+    // 🔥 Calefacción y Aire Acondicionado
+    aireAcondicionado: true,
+    calefaccion: true,
 
     // 🔧 Kilometraje
     km: 145000,
@@ -21,10 +28,20 @@ export const vehiculos = [
     formulario08Firmado: true,
     documentacionVerificada: true,
 
-    // 📜 Informe de dominio
-    ultimoInformeDominio: {
-      fecha: "2025-01-20",
-      pdf: "docs/gol-trend-2013.pdf",
+    // 📜 Informes
+    informes: {
+      dominio: {
+        realizado: true,
+        fecha: "2025-01-20",
+      },
+      multas: {
+        realizado: true,
+        fecha: "2025-01-20",
+      },
+      patentes: {
+        realizado: false,
+        fecha: null,
+      },
     },
 
     // 📞 Contacto del vendedor
@@ -36,8 +53,9 @@ export const vehiculos = [
     // 🖼 Fotos del vehículo (múltiples)
     imagenes: [
       "../img/vehiculos/ford.webp",
-      "img/gol-trend-2013-2.jpg",
-      "img/gol-trend-2013-3.jpg",
+      "../img/vehiculos/ford-frente.webp",
+      "../img/vehiculos/ford.webp",
+      "../img/vehiculos/ford.webp",
     ],
 
     // 📝 Observaciones
