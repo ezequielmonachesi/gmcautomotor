@@ -92,6 +92,15 @@ footer p {
   top: -0px;
 }
 
+/* Pagina detalle */
+
+/* Altura fija del slide */
+/* .swiper-slide {
+  height: 10rem !important;
+} */
+
+
+
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 576px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 
