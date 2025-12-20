@@ -8,13 +8,13 @@ function renderTarjetas(listaAutos) {
   listaAutos.forEach((auto) => {
     const portada = auto.imagenes?.[0] || "";
 
-    const tarjeta = document.createElement("div");
-    tarjeta.className = "col-md-4 mb-4";
+    const tarjeta = document.createElement("article");
+    tarjeta.className = "col-6 col-md-4 mb-4";
 
     tarjeta.innerHTML = `
       <a href="./detalle.html?id=${
         auto.id
-      }" style="text-decoration: none; color: inherit">
+      } " style="text-decoration: none; color: inherit">
         <div class="card shadow-sm" style="border-radius: 10px; overflow: hidden">
           <img src="${portada}" class="card-img-top" style="height: 180px; object-fit: cover" />
 

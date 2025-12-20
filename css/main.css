@@ -71,6 +71,11 @@ footer p {
   margin-top: 7rem;
 }
 
+.breadcrumb-padding {
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+}
+
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 768px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 
@@ -98,9 +103,6 @@ footer p {
 /* .swiper-slide {
   height: 10rem !important;
 } */
-
-
-
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 576px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 
