@@ -46,18 +46,22 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
       id="menu"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
             src="img/gmc monachesi coronel sin fondo 2.png"
-            alt="gmc"
-            width="250"
-            height="50"
+            alt="GMC Automotor - Gestoría del Automotor"
+            width="220"
+            height="45"
+            class="me-2"
           />
         </a>
+
+        <!-- Toggle mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -65,32 +69,40 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Abrir menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Inicio</a
-              >
+              <a class="nav-link fw-semibold active" href="index.html">
+                Inicio
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="./pages/vehiculos.html">Vehículos</a>
+              <a class="nav-link fw-semibold" href="./pages/vehiculos.html">
+                Vehículos
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link fw-semibold" href="#mandatariosmatriculados">
+                Quiénes somos
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mandatariosmatriculados"
-                >¿Quienes somos?</a
-              >
+
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-primary px-3" href="#contacto"> Contacto </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <main class="position-relative">
       <!-- Carrusel -->
       <div
@@ -152,484 +164,465 @@
           data-aos-offset="0"
           data-aos-duration="2000"
         >
-          Tu automóvil, tu <span class="text-primary">tranquilidad</span>.
+          Tu automóvil, tu <span class="text-primary">tranquilidad</span>
         </h1>
 
         <p class="p-3 fs-4">
-          En <span class="text-primary fw-semibold">GMC</span> nos encargamos de
-          tus trámites vehiculares para que vos y tu familia estén seguros.
+          En <span class="text-primary fw-semibold">GMC</span> te acompañamos en
+          cada trámite vehicular para que vos y tu familia estén seguros.
         </p>
 
         <p class="p-2 fs-5 text-secondary">
           Transferencias, informes y gestiones registrales realizadas de forma
-          clara, rápida y sin vueltas.
+          clara, rápida y sin vueltas. <br />
+          Asesoramos para que sepas exactamente qué necesitás hacer y evites
+          problemas futuros.
         </p>
 
-        <p class="p-2 fs-6 text-muted">
-          Pedí tu presupuesto online sin moverte de tu casa. Te asesoramos sin
-          compromiso y te respondemos a la brevedad.
-        </p>
-
-        <div class="mt-3">
+        <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeCJzPrSxjAasNbhPa9hz4BkKs27_RVtoRMX4noBQuuvHQ8Gg/viewform"
             target="_blank"
-            class="btn btn-primary btn-lg px-4"
+            class="btn btn-primary btn px-4"
           >
-            Solicitar presupuesto
+            Consultar mi trámite
+          </a>
+
+          <span class="align-self-center text-muted fs-6">
+            Sin compromiso
+          </span>
+        </div>
+      </section>
+
+      <!-- Sección 2 - ¿Qué hacemos? -->
+      <section class="container mt-5">
+        <h2 class="text-center pt-5 pb-4">¿Qué hacemos por vos?</h2>
+
+        <p class="text-center fs-5 mb-5">
+          Nos encargamos de
+          <strong>organizar, verificar y presentar</strong> toda la
+          documentación necesaria para que realices tu trámite vehicular de
+          forma clara, segura y sin errores.
+        </p>
+
+        <article class="row g-5">
+          <aside class="col-10 col-md-6 col-lg-3 mx-auto">
+            <div
+              class="shadow rounded-3 h-100 border-start border-3 border-primary p-3 card-que-hacemos"
+            >
+              <div class="text-center mb-3">
+                <i class="fa-solid fa-file-circle-check text-primary fs-1"></i>
+              </div>
+
+              <h4 class="text-center">Verificación documental</h4>
+
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Informe de dominio
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Informe de multas
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Estado de patentes
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Prendas, inhibiciones y denuncias
+                </li>
+              </ul>
+
+              <p class="text-muted small text-center mt-2">
+                Ideal antes de comprar o vender un vehículo.
+              </p>
+
+              <div class="text-center mt-3">
+                <a
+                  href="https://wa.me/3816345999?text=Hola,%20quiero%20consultar%20por%20la%20verificación%20documental%20de%20un%20vehículo."
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="col-10 col-md-6 col-lg-3 mx-auto">
+            <div
+              class="shadow rounded-3 h-100 border-start border-3 border-primary p-3 card-que-hacemos"
+            >
+              <div class="text-center mb-3">
+                <i class="fa-solid fa-folder-open text-primary fs-1"></i>
+              </div>
+
+              <h4 class="text-center">Gestión del trámite</h4>
+
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Preparación completa de la carpeta
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Revisión de documentación
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Presentación en el Registro
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Seguimiento del trámite
+                </li>
+              </ul>
+
+              <p class="text-muted small text-center mt-2">
+                Transferencias, altas, bajas, cédulas y más.
+              </p>
+
+              <div class="text-center mt-3">
+                <a
+                  href="https://wa.me/3816345999?text=Hola,%20quiero%20consultar%20por%20la%20gestión%20de%20un%20trámite%20vehicular."
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="col-10 col-md-6 col-lg-3 mx-auto">
+            <div
+              class="shadow rounded-3 h-100 border-start border-3 border-primary p-3 card-que-hacemos"
+            >
+              <div class="text-center mb-3">
+                <i class="fa-solid fa-calendar-check text-primary fs-1"></i>
+              </div>
+
+              <h4 class="text-center">Turnos y urgencias</h4>
+
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Coordinación de turnos
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Trámites urgentes
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Acompañamiento al Registro
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Retiro de documentación
+                </li>
+              </ul>
+
+              <p class="text-muted small text-center mt-2">
+                Ideal si necesitás resolver rápido y sin errores.
+              </p>
+
+              <div class="text-center mt-3">
+                <a
+                  href="https://wa.me/3816345999?text=Hola,%20necesito%20un%20trámite%20vehicular%20con%20urgencia."
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  Consultar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </aside>
+        </article>
+      </section>
+
+      <!-- COMO TRABAJAMOS -->
+      <section class="container mt-5" id="como-trabajamos">
+        <h2 class="text-center mb-3 pt-5">¿Cómo trabajamos?</h2>
+
+        <p class="text-center fs-5 mb-5">
+          Nuestro objetivo es que realices tu trámite
+          <strong>sin errores, sin vueltas y con total tranquilidad</strong>.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Paso 1 -->
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="h-100 text-center shadow rounded-3 p-4 card-equipo">
+              <div class="mb-3">
+                <i class="fa-solid fa-comments text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">1. Nos consultás</h5>
+              <p class="text-muted">
+                Te contactás por WhatsApp y nos contás qué trámite necesitás
+                hacer. Te orientamos desde el primer momento.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="h-100 text-center shadow rounded-3 p-4 card-equipo">
+              <div class="mb-3">
+                <i class="fa-solid fa-file-shield text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">2. Verificamos la documentación</h5>
+              <p class="text-muted">
+                Revisamos el estado registral del vehículo: dominio, multas,
+                patentes, prendas e inhibiciones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="h-100 text-center shadow rounded-3 p-4 card-equipo">
+              <div class="mb-3">
+                <i class="fa-solid fa-folder-open text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">3. Preparamos el trámite</h5>
+              <p class="text-muted">
+                Armamos la carpeta completa, verificamos que todo esté correcto
+                y coordinamos el turno correspondiente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="h-100 text-center shadow rounded-3 p-4 card-equipo">
+              <div class="mb-3">
+                <i class="fa-solid fa-check-circle text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">4. Presentamos y seguimos</h5>
+              <p class="text-muted">
+                Presentamos el trámite en el Registro y realizamos el
+                seguimiento hasta que esté finalizado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-5">
+          <a
+            href="https://wa.me/3816345999?text=Hola,%20quiero%20consultar%20cómo%20realizar%20un%20trámite%20vehicular."
+            class="btn btn-primary btn-lg"
+          >
+            Consultar por WhatsApp
           </a>
         </div>
       </section>
 
-      <!-- ==================================================== -->
-      <!-- SERVICIOS -->
-      <!-- ==================================================== -->
+      <!-- PREGUNTAS FRECUENTES -->
+      <section class="my-5">
+        <div class="container pt-3 pb-3 d-flex justify-content-center">
+          <div class="col-md-9 col-lg-10">
+            <div class="p-4 p-md-5 bg-light rounded-4 shadow-sm">
+              <h2 class="text-center mb-4">Preguntas frecuentes</h2>
 
-      <!-- Sección 2 - ¿Qué hacemos? -->
-      <section class="">
-        <h2 class="text-center my-5">¿Qué hacemos?</h2>
-        <div class="container mb-5">
-          <article class="row justify-content-around gy-4 tarjeta-altura">
-            <!-- Tarjeta 1 -->
-            <aside class="col-9 col-md-4 col-lg-3">
-              <div
-                class="shadow rounded-3 h-100 border-2 border-primary border-start border-bottom tarjeta"
-              >
-                <div class="tarjeta-face tarjeta-front p-3">
-                  <div class="text-center">
-                    <i
-                      class="fa-solid fa-file icon-cards text-primary fs-1"
-                    ></i>
-                  </div>
-                  <div class="mt-3">
-                    <h4 class="text-center">Informe de dominio</h4>
-                    <ul class="list-unstyled">
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Verificá los datos completo del vehículo antes de
-                        comprar.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Conocé si tiene prendas, denuncias o inhibiciones.
-                      </li>
-                    </ul>
-                    <div class="text-center">
-                      <p class="mt-3 mb-1">Precio final:</p>
-                      <span class="fw-bold fs-5 precio-final">$9.999,99</span>
-                      <!-- <small class="text-muted d-block"
-                        >Todos queremos comprar tranquilos. Un informe puede darte esa seguridad</small
-                      > -->
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <!-- Pregunta 1 -->
+                <div class="accordion-item border-0 pb-3">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button border border-primary rounded-pill border-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      <span>
+                        <span class="text-primary">¿ </span>
+                        Por qué contratar a un Mandatario del Automotor
+                        <span class="text-primary">?</span>
+                      </span>
+                    </button>
+                  </h2>
+
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body pt-4 pb-2">
+                      <p>
+                        Un mandatario del automotor es un profesional capacitado
+                        para realizar trámites de manera correcta y segura. Su
+                        función principal es brindarte
+                        <strong>seguridad jurídica</strong>, evitando errores,
+                        demoras y posibles problemas legales en la compra o
+                        venta de un vehículo.
+                      </p>
                     </div>
-                    <div class="text-center mt-3">
-                      <a
-                        href="https://wa.me/3816345999?text=Hola%20quiero%20solicitar%20un%20INFORME%20DE%20DOMINIO.%0A%0APatente/Dominio%3A%20_____"
-                        class="btn btn-azul"
-                        >Consultar por Whatsapp</a
-                      >
+                  </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="accordion-item pb-3 border-0">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed border border-primary rounded-pill border-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      <span>
+                        <span class="text-primary">¿ </span>
+                        Por qué es importante solicitar informes antes de
+                        comprar un vehículo
+                        <span class="text-primary">?</span>
+                      </span>
+                    </button>
+                  </h2>
+
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body pt-4 pb-2">
+                      <p>
+                        Los informes te permiten conocer la
+                        <strong>situación legal y registral</strong> del
+                        vehículo antes de comprarlo. Podrás verificar si posee
+                        prenda, embargo, pedido de secuestro, inhibiciones,
+                        multas o irregularidades. Esto te ayuda a evitar
+                        sorpresas y realizar una compra segura. Los informes son
+                        válidos en todo el país.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button
+                      class="accordion-button collapsed border border-primary rounded-pill border-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      <span>
+                        <span class="text-primary">¿ </span>
+                        Qué pasa si vendo un auto y no se realiza la
+                        transferencia
+                        <span class="text-primary">?</span>
+                      </span>
+                    </button>
+                  </h2>
+
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree"
+                  >
+                    <div class="accordion-body pt-4 pb-2">
+                      <p>
+                        Si la transferencia no se realiza,
+                        <strong
+                          >seguirás siendo el titular registral del
+                          vehículo</strong
+                        >. Esto implica que las multas, impuestos y cualquier
+                        responsabilidad legal recaerán sobre vos, incluso si ya
+                        no lo usás. Por eso es fundamental realizar la
+                        transferencia en tiempo y forma.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </aside>
+              <p class="text-center text-secondary mt-4">
+                ¿Tenés otra duda? Escribinos y te asesoramos sin compromiso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Tarjeta 2 -->
-            <aside class="col-9 col-md-4 col-lg-3">
-              <div
-                class="shadow rounded-3 h-100 border-2 border-primary border-start border-bottom tarjeta"
-              >
-                <div class="tarjeta-face tarjeta-front p-3">
-                  <div class="text-center">
-                    <i
-                      class="fa-solid fa-circle-exclamation icon-cards text-primary fs-1"
-                    ></i>
-                  </div>
-                  <div class="mt-3">
-                    <h4 class="text-center">Informe de multas</h4>
-                    <ul class="list-unstyled">
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Revisá si el vehículo tiene multas activas.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Ahorra tiempo y evitá sorpresas al transferir.
-                      </li>
-                    </ul>
-                    <div class="text-center">
-                      <p class="mt-3 mb-1">Precio final:</p>
-                      <span class="fw-bold fs-5 precio-final">$12.999,99</span>
-                      <!-- <small class="text-muted d-block"
-                        >Todos queremos comprar tranquilos. Un informe puede darte esa seguridad</small
-                      > -->
-                    </div>
-                    <div class="text-center mt-3">
-                      <a
-                        href="https://wa.me/3816345999?text=Hola%20quiero%20solicitar%20un%20INFORME%20DE%20MULTAS.%0A%0APatente/Dominio%3A%20_____"
-                        class="btn btn-azul"
-                        >Consultar por Whatsapp</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </aside>
+      <!-- MÁS TRÁMITES -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-8">
+              <div class="accordion" id="accordionMasTramites">
+                <div class="accordion-item border-0 shadow-sm rounded-4">
+                  <h2 class="accordion-header" id="headingMasTramites">
+                    <button
+                      class="accordion-button collapsed fw-semibold fs-5 rounded-top-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseMasTramites"
+                      aria-expanded="false"
+                      aria-controls="collapseMasTramites"
+                    >
+                      <i class="fa-solid fa-plus me-2 text-primary"></i>
+                      Más trámites que realizamos
+                    </button>
+                  </h2>
 
-            <!-- Tarjeta 3 -->
-            <aside class="col-9 col-md-4 col-lg-3">
-              <div
-                class="shadow rounded-3 h-100 border-2 border-primary border-start border-bottom tarjeta"
-              >
-                <div class="tarjeta-face tarjeta-front p-3">
-                  <div class="text-center">
-                    <i
-                      class="fa-solid fa-calendar icon-cards text-primary fs-1"
-                    ></i>
-                  </div>
-                  <div class="mt-3">
-                    <h4 class="text-center">Turno</h4>
-                    <ul class="list-unstyled">
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Preparado completo de carpeta.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Coordinación de turno en el Registro.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Asesoramiento previo al trámite.
-                      </li>
-                    </ul>
-                    <div class="text-center">
-                      <p class="mt-3 mb-1">Precio final:</p>
-                      <span class="fw-bold fs-5 precio-final">$19.999,99</span>
-                      <!-- <small class="text-muted d-block"
-                        >Todos queremos comprar tranquilos. Un informe puede darte esa seguridad</small
-                      > -->
-                    </div>
-                    <div class="text-center mt-3">
-                      <a
-                        href="https://wa.me/3816345999?text=Hola%20quiero%20solicitar%20un%20TURNO%20para%20realizar%20un%20tr%C3%A1mite.%0A%0AIndicame%20qu%C3%A9%20documentaci%C3%B3n%20necesito.%20Gracias!"
-                        class="btn btn-azul"
-                        >Consultar por Whatsapp</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </aside>
+                  <div
+                    id="collapseMasTramites"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingMasTramites"
+                  >
+                    <div class="accordion-body pt-4">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                          <ul class="list-unstyled">
+                            <li class="mb-2">
+                              ✔ Transferencia por orden judicial
+                            </li>
+                            <li class="mb-2">
+                              ✔ Reposición / duplicado de patentes
+                            </li>
+                            <li class="mb-2">
+                              ✔ Tráiler – nuevo patentamiento (01)
+                            </li>
+                          </ul>
+                        </div>
 
-            <!-- Tarjeta 4 -->
-            <aside class="col-9 col-md-4 col-lg-3">
-              <div
-                class="shadow rounded-3 h-100 border-2 border-primary border-start border-bottom tarjeta"
-              >
-                <div class="tarjeta-face tarjeta-front p-3">
-                  <div class="text-center">
-                    <i
-                      class="fa-solid fa-warning icon-cards text-primary fs-1"
-                    ></i>
-                  </div>
-                  <div class="mt-3">
-                    <h4 class="text-center">
-                      Turno Urgente <br />
-                      72hs hábiles
-                    </h4>
-                    <ul class="list-unstyled">
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Preparado completo de carpeta.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Acompañamiento al Registro.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Seguimiento personalizado del trámite.
-                      </li>
-                      <li class="">
-                        <i class="fa-solid fa-check text-primary me-2"></i
-                        >Retiro de documentación incluida.
-                      </li>
-                      <li class="">
-                        <i
-                          class="fa-solid fa-check-circle text-primary me-2"
-                        ></i
-                        ><span class="fw-bolder"
-                          >Patentamiento, Transferencias, Patentes, Cédulas y
-                          más.</span
+                        <div class="col-12 col-md-4">
+                          <ul class="list-unstyled">
+                            <li class="mb-2">✔ Denuncia de venta</li>
+                            <li class="mb-2">✔ Denuncia de compra</li>
+                            <li class="mb-2">✔ Informe de dominio y multas</li>
+                          </ul>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                          <ul class="list-unstyled">
+                            <li class="mb-2">✔ Cédula verde</li>
+                            <li class="mb-2">✔ Cédula de autorizado (azul)</li>
+                            <li class="mb-2">✔ Cédula de posesión</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <hr class="my-4" />
+
+                      <p class="text-center text-secondary mb-3">
+                        ¿No encontrás tu trámite? Escribinos y te asesoramos sin
+                        cargo.
+                      </p>
+
+                      <div class="text-center">
+                        <a
+                          href="https://wa.me/3816345999"
+                          class="btn btn-outline-primary rounded-pill px-4"
                         >
-                      </li>
-                    </ul>
-                    <div class="text-center">
-                      <!-- <p class="mt-3 mb-1">Precio final:</p>
-                      <span class="fw-bold fs-5 precio-final">$19.999,99</span> -->
-                      <!-- <small class="text-muted d-block"
-                        >Todos queremos comprar tranquilos. Un informe puede darte esa seguridad</small
-                      > -->
-                    </div>
-                    <div class="text-center mt-3">
-                      <a
-                        href="https://wa.me/3816345999?text=Hola%20necesito%20un%20TURNO%20PRIORITARIO.%0A%0AQuiero%20que%20me%20acompa%C3%B1en%20en%20el%20registro%20y%20hagan%20el%20seguimiento%20del%20tr%C3%A1mite.%20Gracias!"
-                        class="btn btn-azul"
-                        >Consultar por Whatsapp</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </article>
-        </div>
-      </section>
-
-      <section class="container">
-        <div
-          class="row w-75 mx-auto servicio-fila"
-          data-aos="fade-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
-            <img
-              class="wow bounce card view overlay zoom hoverable"
-              src="img/transferencia.jpg"
-              alt="transferencia"
-              width="180"
-              height="160"
-            />
-            <div>
-              <h3 class="fs-5 mt-4 px-4 pb-1">Transferencia</h3>
-              <p class="px-4">Realiza tu transferencia con seguridad.</p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            <img
-              class="wow bounce card view overlay zoom hoverable"
-              src="img/vtv2.jpg"
-              alt="vtv2"
-              width="180"
-              height="160"
-            />
-            <div>
-              <h3 class="fs-5 mt-4 px-4 pb-1">Modifica tu vehículo</h3>
-              <p class="px-4">Compra-Venta Alta-Bajas de autopartes.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row w-75 mx-auto servicio-fila">
-          <div
-            class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            <img
-              class="wow bounce card view overlay zoom hoverable"
-              src="img/escribiendo.jpg"
-              alt="cambioDeRadiación"
-              width="180"
-              height="160"
-            />
-            <div>
-              <h3 class="fs-5 mt-4 px-4 pb-1">Cambio de Radicación</h3>
-              <p class="px-4">Cambio de domicilio del automotor.</p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            <img
-              class="wow bounce card view overlay zoom hoverable"
-              src="img/cedula-de-poseedor.jpg"
-              alt="transferencia"
-              width="180"
-              height="160"
-            />
-            <div>
-              <h3 class="fs-5 mt-4 px-4 pb-1">Cédulas</h3>
-              <p class="px-4">Cédulas de identificación.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--BOTONESPREGUNTAS-->
-      <section>
-        <div
-          class="container pt-3 pb-3 d-flex flex-nowrap justify-content-center"
-        >
-          <div class="col-md-7">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item border-0 pb-3">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button
-                    class="accordion-button border border-primary rounded-pill border-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne"
-                  >
-                    <span>
-                      <span class="text-primary">¿ </span>Porqué contratar a un
-                      Mandatario del Automotor<span class="text-primary">
-                        ?</span
-                      >
-                    </span>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="panelsStayOpen-headingOne"
-                >
-                  <div class="accordion-body pt-4 pb-2">
-                    <span>
-                      El mandatario es una persona capacitada para garantizar a
-                      sus clientes una operación segura. Su función es brindar
-                      seguridad jurídica en la transacción de automotores.
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item pb-3 border-0">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button
-                    class="accordion-button collapsed border border-primary rounded-pill border-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo"
-                  >
-                    <span>
-                      <span class="text-primary">¿ </span>Solicitar informes del
-                      vehículo antes de comprarlo
-                      <span class="text-primary">?</span>
-                    </span>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingTwo"
-                >
-                  <div class="accordion-body pt-4 pb-2">
-                    <p>
-                      Los informes te permiten conocer la situación jurídica y
-                      legal de cualquier vehículo(prenda, robo, hurto, embargo,
-                      inhibiciones, etc.). Así mismo saber si ese automóvil
-                      cuenta con multas por infracciones. Los informes son a
-                      nivel País.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item border-0">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button
-                    class="accordion-button collapsed border border-primary rounded-pill border-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    <span>
-                      <span class="text-primary">¿ </span>
-                      Qué pasa si vendo un auto y no se realizó la
-                      transferencia<span class="text-primary"> ?</span>
-                    </span>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingThree"
-                >
-                  <div class="accordion-body pt-4 pb-2">
-                    <p>
-                      Como vendedor, seguirás siendo el titular del vehículo, y
-                      recaerán sobre ti todas sus responsabilidades hasta que el
-                      comprador realice el cambio de nombre, además deberás
-                      abonar cualquier multa que llegue del vehículo.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--MasTramites-->
-      <div class="section">
-        <div class="container d-flex flex-nowrap justify-content-center">
-          <div class="col col-md-7">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button
-                    class="accordion-button collapsed border border-primary rounded-pill border-2 bg-primary"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    <span class="text-white">Más Trámites</span>
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <div class="row">
-                      <div class="col-12 col-md-4">
-                        <ul>
-                          <li>Transferencia por orden judicial</li>
-                          <li>Reposición/Duplicado de Patentes</li>
-                          <li>Tráiler (Nuevo patentamiento 01)</li>
-                        </ul>
-                      </div>
-
-                      <div class="col-12 col-md-4">
-                        <ul>
-                          <li>Reposición/Duplicado de Patentes</li>
-                          <li>Denuncia de Venta</li>
-                          <li>Denuncia de Compra</li>
-                        </ul>
-                      </div>
-
-                      <div class="col-12 col-md-4">
-                        <ul>
-                          <li>Cédulas de identificación (Verde)</li>
-                          <li>Cédula de Autorizado para conducir (Azul)</li>
-                          <li>Cédula de Posesión</li>
-                        </ul>
+                          Consultar por WhatsApp
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -638,185 +631,219 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Novedades  -->
-      <!-- ¿Novedades?  -->
-      <!-- <section class="container-fluid novedades pt-2">
-        <button
-          class="btn btn-primary rounded-pill"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          Novedades
-        </button>
-
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasRight"
-          aria-labelledby="offcanvasRightLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Novedades</h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <section class="pt-3 w-75 m-auto">
-              <div class="card">
-                <div class="card-header bg-primary text-light">Tráileres.</div>
-                <img
-                  src="img/trailer01.jpg"
-                  class="card-img-top"
-                  alt="Trailer"
-                />
-                <img
-                  src="img/trailer2.jpg"
-                  class="card-img-top"
-                  alt="Trailer2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Tráiler Categoría O1.</h5>
-                  <p class="card-text">
-                    Los tráileres o pequeños acoplados desplazan hasta 750 kg.de
-                    peso, con fines recreativos por ejemplo:
-                    <span class="fst-italic"
-                      >pequeñas embarcaciones deportivas, motos, equipajes,
-                      etc.</span
-                    >
-                    Deben contar con una chapa patente o placa metálica
-                    identificatoria de uso obligatorio, a partir del 01 de
-                    noviembre de 2021 y vinculada al dominio del vehículo
-                    tractor o de remolque.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section class="pt-4 w-75 m-auto">
-              <div class="card">
-                <div class="card-header bg-primary text-light">
-                  Reempadronamiento Motovehículo.
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Motovehículos usados no registrados.
-                  </h5>
-                  <p class="card-text">
-                    La nueva inscripcion es para motovehículos usados no
-                    registrados que se hayan fabricado o importado hasta el 31
-                    de diciembre de 2020
-                    <span class="fst-italic"
-                      >La categoría motovehículos comprende ciclomotores,
-                      motocicletas, motocarros (motocargas y motofurgones),
-                      motonetas, triciclos y cuatriciclos con motor</span
-                    >
-                  </p>
-                  <p>
-                    “Está destinado a aquellos ciudadanos que encuentren
-                    imposibilitados de cumplir con el requisito de la
-                    inscripción inicial al no contar con la documentación
-                    necesaria”, explicaron desde la Agencia Nacional de
-                    Seguridad Vial (ANSV)
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section> -->
-
-      <!--Beneficios-->
-      <section class="beneficios pt-4">
-        <div class="container pt-5">
-          <div class="row">
-            <div class="col-12 pb-5">
-              <h2>
-                <span class="border-top border-3 border-primary pt-3"
-                  >¿Qué ben</span
-                >eficios tiene tu propio automóvil?
+      <!-- BENEFICIOS -->
+      <section class="beneficios py-5">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <!-- TÍTULO -->
+            <div class="col-12">
+              <h2 class="text-center mb-5">
+                <span class="pt-3 d-inline-block">
+                  ¿Cuáles son los beneficios de tener tu automóvil a tu nombre?
+                </span>
               </h2>
             </div>
 
-            <div class="col-12 col-md-6 p-0">
-              <img src="img/beneficio.jpg" alt="beneficio" class="img-fluid" />
+            <!-- IMAGEN -->
+            <div class="col-12 col-md-6">
+              <img
+                src="img/beneficio.jpg"
+                alt="Beneficios de tener un automóvil"
+                class="img-fluid rounded-4 shadow-sm"
+              />
             </div>
 
-            <div
-              class="col-12 col-md-6 text-center pt-3 d-flex flex-nowrap justify-content-center align-items-center"
-            >
-              <div class="container">
-                <p class="fs-5">
-                  <span
-                    ><i class="fa-solid fa-check text-primary fs-6"></i
-                  ></span>
-                  Comodidad para tu familia.
-                </p>
-                <p class="fs-5">
-                  <span
-                    ><i class="fa-solid fa-check text-primary fs-6"></i
-                  ></span>
-                  Oportunidad de inversión.
-                </p>
-                <p class="fs-5">
-                  <span
-                    ><i class="fa-solid fa-check text-primary fs-6"></i
-                  ></span>
-                  Independencia.
-                </p>
-                <p class="fs-5">
-                  <span
-                    ><i class="fa-solid fa-check text-primary fs-6"></i
-                  ></span>
-                  Beneficioso ante imprevistos.
-                </p>
-                <p class="fs-5">
-                  <span
-                    ><i class="fa-solid fa-check text-primary fs-6"></i
-                  ></span>
-                  Facilita muchas tareas.
-                </p>
-                <p class="fs-5">
-                  <span
-                    ><i class="fa-solid fa-check text-primary fs-6"></i
-                  ></span>
-                  Ahorras tiempo.
-                </p>
-              </div>
+            <!-- TEXTO -->
+            <div class="col-12 col-md-6">
+              <p class="fs-5 text-secondary mb-4">
+                Tener un automóvil no es solo comodidad: es una decisión que
+                influye en tu tranquilidad, tu tiempo y la seguridad de tu
+                familia.
+              </p>
+
+              <ul class="list-unstyled fs-5">
+                <li class="mb-3">
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Mayor comodidad y bienestar para vos y tu familia
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Independencia para moverte cuando lo necesites
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Ahorro de tiempo en traslados y gestiones diarias
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Respaldo ante imprevistos y situaciones de emergencia
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-check text-primary me-2"></i>
+                  Posible oportunidad de inversión o crecimiento personal
+                </li>
+              </ul>
+
+              <p class="mt-4 fw-semibold">
+                Para disfrutar estos beneficios sin riesgos, es fundamental que
+                el vehículo esté correctamente transferido y con toda la
+                documentación en regla.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ==================================================== -->
-      <!-- ACERCA DE NOSOTROS -->
-      <!-- ==================================================== -->
+      <!-- SECCION VEHICULOS -->
+      <section class="container py-5" id="vehiculos-gmc">
+        <!-- TÍTULO -->
+        <div class="text-center mb-4">
+          <h2 class="fs-2">
+            Vehículos <span class="text-primary">verificados</span> por GMC
+          </h2>
+          <p class="text-secondary fs-5 mt-2">
+            Publicaciones con documentación controlada para una operación
+            segura.
+          </p>
 
+          <small class="text-muted d-block mt-2">
+            <i class="bi bi-shield-check text-primary"></i>
+            No somos un sitio de clasificados. Intermediamos y verificamos la
+            documentación registral.
+          </small>
+        </div>
+
+        <!-- LISTADO DE VEHÍCULOS (SE RENDERIZA CON JS) -->
+        <article
+          class="row justify-content-center"
+          id="lista-vehiculos"
+          data-limit="2"
+        ></article>
+
+        <!-- VER MÁS VEHÍCULOS -->
+        <div class="text-center mt-4">
+          <a href="./pages/vehiculos.html" class="btn btn-primary btn-lg px-4">
+            Ver todos los vehículos
+          </a>
+        </div>
+
+        <!-- CTA SUMAR VEHÍCULO -->
+        <div class="text-center mt-5">
+          <p class="fw-semibold fs-5 mb-1">
+            ¿Querés publicar tu vehículo de forma segura?
+          </p>
+          <p class="text-secondary mb-3">
+            Revisamos la documentación y te acompañamos durante todo el proceso.
+          </p>
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeCJzPrSxjAasNbhPa9hz4BkKs27_RVtoRMX4noBQuuvHQ8Gg/viewform"
+            target="_blank"
+            class="btn btn-outline-primary btn-lg px-4"
+          >
+            Sumar mi vehículo
+          </a>
+        </div>
+
+        <!-- PROTECCIÓN DE MARCA -->
+        <p class="text-center text-muted mt-4" style="font-size: 0.9rem">
+          GMC no comercializa vehículos. Actuamos como intermediarios
+          administrativos y verificamos la documentación para brindar
+          operaciones seguras.
+        </p>
+      </section>
+
+      <!-- CLIENTES SATISFECHOS -->
+      <section class="container my-5">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">
+            Clientes que <span class="text-primary">confiaron</span> en nuestro
+            trabajo
+          </h2>
+          <p class="text-secondary fs-5 mt-2">
+            Cada trámite realizado es una responsabilidad asumida con seriedad y
+            compromiso.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Testimonio 1 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="mb-2 text-primary">★★★★☆</div>
+                <p class="text-secondary">
+                  “Me asesoraron desde el primer momento. Hicimos la
+                  transferencia sin problemas y con toda la documentación en
+                  regla.”
+                </p>
+                <hr />
+                <p class="mb-0 fw-semibold">✔️ Cliente particular</p>
+                <small class="text-muted">Transferencia de automotor</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="mb-2 text-primary">★★★★★</div>
+                <p class="text-secondary">
+                  “Solicité informes antes de comprar el auto y me ahorré muchos
+                  problemas. Muy claros y responsables.”
+                </p>
+                <hr />
+                <p class="mb-0 fw-semibold">✔️ Compra segura</p>
+                <small class="text-muted">Informe de dominio y multas</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="mb-2 text-primary">★★★★☆</div>
+                <p class="text-secondary">
+                  “No tenía tiempo para ir al registro. Se encargaron de todo y
+                  me mantuvieron informado en cada paso.”
+                </p>
+                <hr />
+                <p class="mb-0 fw-semibold">✔️ Trámite gestionado</p>
+                <small class="text-muted">Asesoramiento completo</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Refuerzo de confianza -->
+        <div class="text-center mt-5">
+          <p class="fs-6 text-secondary mt-4 text-center">
+            ✔️ Trámites claros &nbsp;•&nbsp; ✔️ Documentación verificada
+            &nbsp;•&nbsp; ✔️ Acompañamiento en todo el proceso
+          </p>
+        </div>
+      </section>
+
+      <!-- ACERCA DE NOSOTROS -->
       <section class="py-5">
         <a name="mandatariosmatriculados"></a>
-        <div
-          class="w-75 m-auto text-center p-3 border-top border-3"
-          id="equipo"
-        >
+        <div class="w-75 m-auto text-center p-3" id="equipo">
           <h1 class="text-primary mb-5 fs-2" id="typewriter"></h1>
 
           <p class="fs-4 pt-3">
-            Somos los responsables de que todas las gestiones que quieras
-            realizar sean completamente ágiles, brindándote un trabajo eficaz
-            con toda la seguridad jurídica.
+            Nos encargamos de que cada gestión que necesites se realice de forma
+            ágil, clara y segura, brindándote un servicio eficaz con total
+            respaldo jurídico.
           </p>
 
-          <div class="row justify-content-center gap-4">
+          <div class="row justify-content-center gap-4 py-5">
             <!-- Card César -->
             <div class="col-12 col-md-4">
-              <div class="card text-center shadow-sm h-100">
+              <div class="card text-center shadow-sm h-100 card-equipo">
                 <img
                   src="./img/monachesi-c-ezequiel.png"
                   class="card-img-top rounded-circle mx-auto mt-4"
@@ -833,7 +860,7 @@
 
             <!-- Card Esposa -->
             <div class="col-12 col-md-4">
-              <div class="card text-center shadow-sm h-100">
+              <div class="card text-center shadow-sm h-100 card-equipo">
                 <img
                   src="./img/silvina-m-coronel.png"
                   class="card-img-top rounded-circle mx-auto mt-4"
@@ -848,53 +875,13 @@
               </div>
             </div>
           </div>
-
-          <!-- Imagen de mandatarios moviéndose de color negro -->
-          <!-- <div class="mt-3 text-center">
-            <img
-              class="img-fluid"
-              src="img/sileze.png"
-              alt="sileze"
-              width="200px"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="3000"
-            />
-          </div> -->
         </div>
       </section>
 
-      <!-- ==================================================== -->
       <!-- CONTACTO -->
-      <!-- ==================================================== -->
-
       <div id="contacto" style="position: relative; top: -100px"></div>
-      <!-- <section
-        class="position-fixed bottom-0 end-0 fs-1 px-3 py-3 px-md-3 py-md-3 px-lg-5 py-lg-4"
-      >
-        <a
-          href="https://wa.me/5493816173184?text=Dejanos%20tu%20consulta"
-          class="text-success fs-1"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            fill="currentColor"
-            class="bi bi-whatsapp"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
-            />
-          </svg>
-        </a>
-      </section> -->
 
-      <!-- ==================================================== -->
       <!-- FORMULARIO -->
-      <!-- ==================================================== -->
-
       <div class="container pt-3" id="contenedor-formulario">
         <div class="text-center mb-5" id="titulo-formulario">
           <!-- Título -->
@@ -1004,35 +991,71 @@
     <!-- PIE DE PAGINA / FOOTER -->
     <!-- ==================================================== -->
 
-    <footer
-      class="w-100 d-flex align-items-center justify-content-center flex-wrap"
-    >
-      <p class="fs-5 px-3 pt-3">
-        GMC &copy; Todos los derechos reservados 2025
-      </p>
-      <div id="iconos">
-        <a
-          href="https://www.instagram.com/gmc_automotor/?hl=es-la"
-          target="_blank"
-          ><i class="bi bi-instagram"></i
-        ></a>
-        <a
-          href="https://wa.me/5493816345999?text=Dejanos%20tu%20consulta"
-          target="_blank"
-          ><i class="bi bi-whatsapp"></i
-        ></a>
-      </div>
-      <!-- <p class="col-12">
-        Creado por:
-        <a
-          href="https://www.linkedin.com/in/c%C3%A9sar-ezequiel-monachesi-a95a38213/"
-          class="text-white fw-bold"
-          >Monachesi César Ezequiel</a
-        >.
-      </p> -->
-    </footer>
+    <footer class="bg-dark text-light mt-5">
+      <div class="container py-4">
+        <div class="row align-items-center gy-3">
+          <!-- Identidad -->
+          <div class="col-12 col-md-4 text-start">
+            <h6 class="fw-bold mb-1">GMC Automotor</h6>
+            <p class="mb-0 small text-secondary text-start">
+              Gestoría del Automotor · Mandatario matriculado
+            </p>
+          </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+          <!-- Datos de contacto -->
+          <div class="col-12 col-md-4 text-center">
+            <p class="mb-1 small">
+              <i class="bi bi-whatsapp text-success me-1"></i>
+              <a
+                href="https://wa.me/5493816345999"
+                target="_blank"
+                class="text-light text-decoration-none"
+              >
+                381 634-5999
+              </a>
+            </p>
+            <p class="mb-0 small text-secondary">
+              Atención personalizada · Tucumán
+            </p>
+          </div>
+
+          <!-- Redes -->
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <a
+              href="https://www.instagram.com/gmc_automotor/?hl=es-la"
+              target="_blank"
+              class="text-light fs-5 me-3"
+              aria-label="Instagram GMC Automotor"
+            >
+              <i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/5493816345999?text=Hola%20quiero%20hacer%20una%20consulta"
+              target="_blank"
+              class="text-light fs-5"
+              aria-label="WhatsApp GMC Automotor"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-3" />
+
+        <!-- Legales -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0 small text-secondary">
+              © 2025 GMC Automotor · Todos los derechos reservados
+            </p>
+            <p class="mb-0 small text-secondary">
+              La gestoría no participa de la compraventa ni certifica estado
+              mecánico o comercial del vehículo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -1066,5 +1089,8 @@
         once: true,
       });
     </script>
+    <!-- recorrer vehículos -->
+    <script src="../js/vehiculos.js"></script>
+    <script type="module" src="../js/render-vehiculos.js"></script>
   </body>
 </html>

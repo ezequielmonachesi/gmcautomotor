@@ -76,6 +76,27 @@ footer p {
   padding-bottom: 1rem;
 }
 
+.card-que-hacemos {
+  transition: all 0.3s ease;
+}
+
+.card-que-hacemos:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(13, 110, 253, 0.15); /* primary */
+  border-color: rgba(13, 110, 253, 0.3);
+}
+
+.card-equipo {
+  transition: all 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.card-equipo:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(13, 110, 253, 0.15); /* primary */
+  border-color: rgba(13, 110, 253, 0.3);
+}
+
 /*====== MEDIA QUARES PANTALLA SM - AJUSTAR TEXTO EN PANTALLAS CHICAS 768px =========*/
 /*====== el parrafo en pantallas chicas ocupa el 90% del ancho =========*/
 

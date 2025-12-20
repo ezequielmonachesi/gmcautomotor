@@ -2,10 +2,12 @@ import { vehiculos } from "../js/vehiculos.js";
 
 const contenedor = document.getElementById("lista-vehiculos");
 
-function renderTarjetas(listaAutos) {
+function renderTarjetas(listaAutos, limite = null) {
   contenedor.innerHTML = "";
 
-  listaAutos.forEach((auto) => {
+  const autosARenderizar = limite ? listaAutos.slice(0, limite) : listaAutos;
+
+  autosARenderizar.forEach((auto) => {
     const portada = auto.imagenes?.[0] || "";
 
     const tarjeta = document.createElement("article");
@@ -14,9 +16,14 @@ function renderTarjetas(listaAutos) {
     tarjeta.innerHTML = `
       <a href="./detalle.html?id=${
         auto.id
-      } " style="text-decoration: none; color: inherit">
-        <div class="card shadow-sm" style="border-radius: 10px; overflow: hidden">
-          <img src="${portada}" class="card-img-top" style="height: 180px; object-fit: cover" />
+      }" style="text-decoration: none; color: inherit">
+        <div class="card shadow-sm h-100" style="border-radius: 10px; overflow: hidden">
+          <img 
+            src="${portada}" 
+            class="card-img-top" 
+            style="height: 180px; object-fit: cover" 
+            alt="${auto.marca} ${auto.modelo}"
+          />
 
           <div class="card-body">
             <span
@@ -31,16 +38,14 @@ function renderTarjetas(listaAutos) {
                 font-weight: 600;
               "
             >
-              ✔️ Documentación Verificada
+              ✔️ Documentación verificada
             </span>
 
             <h5 class="card-title mt-2">${auto.marca} ${auto.modelo}</h5>
-            <p class="card-text" style="margin-bottom: 6px"><strong>Año:</strong> ${
-              auto.anio
-            }</p>
-            <p class="card-text" style="margin-bottom: 6px"><strong>Precio:</strong> $${auto.precio.toLocaleString(
-              "es-AR"
-            )}</p>
+            <p class="card-text mb-1"><strong>Año:</strong> ${auto.anio}</p>
+            <p class="card-text mb-0">
+              <strong>Precio:</strong> $${auto.precio.toLocaleString("es-AR")}
+            </p>
           </div>
         </div>
       </a>
@@ -50,4 +55,14 @@ function renderTarjetas(listaAutos) {
   });
 }
 
-renderTarjetas(vehiculos);
+// ===============================
+// 🧠 Lógica automática según HTML
+// ===============================
+
+if (contenedor) {
+  const limite = contenedor.dataset.limit
+    ? parseInt(contenedor.dataset.limit)
+    : null;
+
+  renderTarjetas(vehiculos, limite);
+}
