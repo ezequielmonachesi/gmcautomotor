@@ -207,36 +207,7 @@
                 <!-- Título -->
                 <h4 class="card-title fw-bold mb-1"></h4>
 
-                <span
-                  style="
-                    display: inline-block;
-                    background: #e8f8ec;
-                    border: 1px solid #42af5d;
-                    color: #2d7a3b;
-                    padding: 4px 10px;
-                    border-radius: 16px;
-                    font-size: 13px;
-                    font-weight: 600;
-                    font-family: sans-serif;
-                  "
-                >
-                  Documentación Verificada
-                </span>
-                <span
-                  style="
-                    display: inline-block;
-                    background: #e8f8ec;
-                    border: 1px solid #42af5d;
-                    color: #2d7a3b;
-                    padding: 4px 10px;
-                    border-radius: 16px;
-                    font-size: 13px;
-                    font-weight: 600;
-                    font-family: sans-serif;
-                  "
-                >
-                  Transferible: Si
-                </span>
+                <div id="estado-legal" class="mt-2"></div>
 
                 <!-- Precio -->
                 <h5 class="fw-bold mb-3 mt-2">
@@ -289,14 +260,6 @@
                 <table class="table table-striped table-sm mb-3">
                   <tbody>
                     <tr>
-                      <td class="fw-semibold">Transferible:</td>
-                      <td id="transferible"></td>
-                    </tr>
-                    <tr>
-                      <td class="fw-semibold">08 firmado:</td>
-                      <td id="form08"></td>
-                    </tr>
-                    <tr>
                       <td class="fw-semibold">Informe de dominio:</td>
                       <td id="ultimo-informe-dominio"></td>
                     </tr>
@@ -307,6 +270,10 @@
                     <tr>
                       <td class="fw-semibold">Informe de patentes:</td>
                       <td id="ultimo-informe-patentes"></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-semibold">Verificación policial:</td>
+                      <td id="ultimo-informe-policial"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -414,7 +381,9 @@
         <div class="row align-items-center gy-3">
           <!-- Identidad -->
           <div class="col-12 col-md-4 text-start">
-            <h6 class="fw-bold mb-1 text-md-start text-center">GMC Automotor</h6>
+            <h6 class="fw-bold mb-1 text-md-start text-center">
+              GMC Automotor
+            </h6>
             <p class="mb-0 small text-secondary text-md-start text-center">
               Gestoría del Automotor · Mandatario matriculado
             </p>
@@ -495,6 +464,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="animacion.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Script Detalle -->
     <script type="module">
@@ -595,6 +567,47 @@
       });
 
       /* ===============================
+   ⚖️ ESTADO LEGAL / DOCUMENTAL
+=============================== */
+
+      const estadoLegal = document.getElementById("estado-legal");
+      estadoLegal.innerHTML = "";
+
+      /* 📄 Documentación general */
+      if (auto.documentacionVerificada) {
+        estadoLegal.innerHTML += `
+          <span 
+        class="badge rounded-pill text-bg-success me-1"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="La documentación del vehículo fue revisada y está correcta"
+      >
+        📄 Documentación validada
+      </span>
+  `;
+      } else {
+        estadoLegal.innerHTML += `
+  `;
+      }
+
+      /* 🚓 Verificación policial */
+      if (auto.informes.verificacionPolicial?.realizado) {
+        estadoLegal.innerHTML += `
+        <span 
+          class="badge rounded-pill text-bg-success me-1"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="La verificación policial confirma que los números de chasis y motor coinciden con la documentación del vehículo."
+        >
+          🚓 Verificación policial OK
+        </span>
+  `;
+      } else {
+        estadoLegal.innerHTML += `
+  `;
+      }
+
+      /* ===============================
      📝 DATOS GENERALES
   =============================== */
       const dominioTd = document.getElementById("dominio");
@@ -647,13 +660,6 @@
       /* ===============================
      📌 DOCUMENTACIÓN
   =============================== */
-      document.getElementById("transferible").textContent = auto.transferible
-        ? "Sí"
-        : "No";
-
-      document.getElementById("form08").textContent = auto.formulario08Firmado
-        ? "Sí"
-        : "No";
 
       // 📅 Formatea fecha ISO (YYYY-MM-DD → DD-MM-YYYY)
       function formatearFecha(fechaISO) {
@@ -671,14 +677,25 @@
         return formatearFecha(informe.fecha);
       }
 
-      document.getElementById("ultimo-informe-dominio").textContent =
-        formatearFecha(auto.informes.dominio.fecha);
+      document.getElementById("ultimo-informe-dominio").textContent = auto
+        .informes.dominio.realizado
+        ? "✅ Validado"
+        : "⚪ Pendiente de validación";
 
-      document.getElementById("ultimo-informe-multas").textContent =
-        formatearFecha(auto.informes.multas.fecha);
+      document.getElementById("ultimo-informe-multas").textContent = auto
+        .informes.multas.realizado
+        ? "✅ Validado"
+        : "⚪ Pendiente de validación";
 
-      document.getElementById("ultimo-informe-patentes").textContent =
-        formatearFecha(auto.informes.patentes.fecha);
+      document.getElementById("ultimo-informe-patentes").textContent = auto
+        .informes.patentes.realizado
+        ? "✅ Validado"
+        : "⚪ Pendiente de validación";
+
+      document.getElementById("ultimo-informe-policial").textContent = auto
+        .informes.verificacionPolicial.realizado
+        ? "✅ Validado"
+        : "⚪ Pendiente de validación";
 
       /* ===============================
      📞 CONTACTO
@@ -749,7 +766,18 @@
         once: true,
       });
     </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tooltipTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+        );
+
+        [...tooltipTriggerList].forEach((el) => {
+          new bootstrap.Tooltip(el, {
+            delay: { show: 0, hide: 0 }, // sin delay
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,139 +1,14 @@
 export const vehiculos = [
   {
     id: 1,
-    marca: "Volkswagen",
-    modelo: "Gol Trend",
-    anio: 2013, // 👈 antes decía año
-    precio: 3500000,
+    marca: "Renault",
+    modelo: "Duster Espression",
+    anio: 2015,
+    precio: 13999999,
     localidad: "San Miguel de Tucumán",
 
     // 🔥 Dominio
-    dominio: "ABC123", // ← opcional | si no quiere mostrar, poné null
-
-    // 🔥 Combustible
-    combustible: {
-      nafta: true,
-      gnc: true,
-    },
-
-    // 🔥 Calefacción y Aire Acondicionado
-    aireAcondicionado: true,
-    calefaccion: true,
-
-    // 🔧 Kilometraje
-    km: 145000,
-
-    // 📌 Documentación (registral)
-    transferible: true,
-    formulario08Firmado: true,
-    documentacionVerificada: true,
-
-    // 📜 Informes
-    informes: {
-      dominio: {
-        realizado: true,
-        fecha: "2025-01-20",
-      },
-      multas: {
-        realizado: true,
-        fecha: "2025-01-20",
-      },
-      patentes: {
-        realizado: false,
-        fecha: null,
-      },
-    },
-
-    // 📞 Contacto del vendedor
-    vendedor: {
-      nombre: "Juan Pérez",
-      telefono: "3815123456",
-    },
-
-    // 🖼 Fotos del vehículo (múltiples)
-    imagenes: [
-      "../img/vehiculos/01-ford.webp",
-      "../img/vehiculos/02-ford.webp",
-      "../img/vehiculos/03-ford.webp",
-      "../img/vehiculos/04-ford.webp",
-      "../img/vehiculos/05-ford.webp",
-      "../img/vehiculos/06-ford.webp",
-      "../img/vehiculos/07-ford.webp",
-    ],
-
-    // 📝 Observaciones
-    observaciones: "Titular presente. Sin prendas ni inhibiciones.",
-  },
-  {
-    id: 2,
-    marca: "Peugeot",
-    modelo: "Peugeot 307 1.6 Xs 110cv",
-    anio: 2011,
-    precio: 6982000,
-    localidad: "San Miguel de Tucumán",
-
-    // 🔥 Dominio
-    dominio: "JRK249",
-
-    // 🔥 Combustible
-    combustible: {
-      nafta: true,
-      gnc: true,
-    },
-
-    // 🔥 Confort
-    aireAcondicionado: true,
-    calefaccion: true,
-
-    // 🔧 Kilometraje
-    km: 178000,
-
-    // 📌 Documentación
-    transferible: true,
-    formulario08Firmado: true,
-    documentacionVerificada: true,
-
-    // 📜 Informes
-    informes: {
-      dominio: {
-        realizado: true,
-        fecha: "2025-01-18",
-      },
-      multas: {
-        realizado: true,
-        fecha: "2025-01-18",
-      },
-      patentes: {
-        realizado: false,
-        fecha: null,
-      },
-    },
-
-    // 📞 Vendedor
-    vendedor: {
-      nombre: "Carlos Gómez",
-      telefono: "3816001122",
-    },
-
-    // 🖼 Imágenes
-    imagenes: [
-      "../img/vehiculos/01-peugeot.webp",
-      "../img/vehiculos/02-peugeot.webp",
-      "../img/vehiculos/03-peugeot.webp",
-      "../img/vehiculos/04-peugeot.webp",
-      "../img/vehiculos/05-peugeot.webp",
-    ],
-  },
-  {
-    id: 4,
-    marca: "Fiat",
-    modelo: "Strada 1.3 Freedom Cd",
-    anio: 2025,
-    precio: 3666000,
-    localidad: "San Miguel de Tucumán",
-
-    // 🔥 Dominio
-    dominio: null, // ← no desea mostrar patente
+    dominio: null, // ← opcional | si no quiere mostrar, poné null
 
     // 🔥 Combustible
     combustible: {
@@ -141,49 +16,56 @@ export const vehiculos = [
       gnc: false,
     },
 
-    // 🔥 Confort
+    // 🔥 Calefacción y Aire Acondicionado
     aireAcondicionado: true,
     calefaccion: true,
 
     // 🔧 Kilometraje
-    km: 118000,
+    km: 94000,
 
-    // 📌 Documentación
-    transferible: true,
-    formulario08Firmado: true,
-    documentacionVerificada: true,
+    // 📌 Documentación (registral)
+    transferible: false,
+    formulario08Firmado: false,
+    documentacionVerificada: false,
 
     // 📜 Informes
     informes: {
       dominio: {
-        realizado: true,
-        fecha: "2025-02-10",
+        realizado: false,
+        fecha: "2025-01-20",
       },
       multas: {
-        realizado: true,
-        fecha: "2025-02-10",
+        realizado: false,
+        fecha: "2025-01-20", //
       },
       patentes: {
-        realizado: true,
-        fecha: "2025-02-10",
+        realizado: false,
+        fecha: "2025-01-20",
+      },
+      verificacionPolicial: {
+        realizado: false,
+        fecha: "2025-01-20",
       },
     },
 
-    // 📞 Vendedor
+    // 📞 Contacto del vendedor
     vendedor: {
-      nombre: "Luis Fernández",
-      telefono: "3815127788",
+      nombre: "Pablo",
+      telefono: "3816663406",
     },
 
-    // 🖼 Imágenes
+    // 🖼 Fotos del vehículo (múltiples)
     imagenes: [
-      "../img/vehiculos/01-fiat.webp",
-      "../img/vehiculos/02-fiat.webp",
-      "../img/vehiculos/03-fiat.webp",
-      "../img/vehiculos/04-fiat.webp",
+      "https://res.cloudinary.com/delz9emli/image/upload/v1767931546/duster-01_1_sa3tl0.jpg",
+      "https://res.cloudinary.com/delz9emli/image/upload/v1767931547/duster-05_1_qiqvtk.jpg",
+      "https://res.cloudinary.com/delz9emli/image/upload/v1767931546/duster-06_1_p8qb2o.jpg",
+      "https://res.cloudinary.com/delz9emli/image/upload/v1767931546/duster-trasera_ahtdeb.jpg",
+      "https://res.cloudinary.com/delz9emli/image/upload/v1767931546/duster-04_1_ila0mm.jpg",
+      "https://res.cloudinary.com/delz9emli/image/upload/v1767931537/duster-03_1_sugeqn.jpg",
     ],
 
     // 📝 Observaciones
-    observaciones: "Vehículo familiar. Documentación completa y verificada.",
+    observaciones:
+      "Renault Duster Espression 2015. Modelo 2015 - 94.000km reales - Cubiertas nuevas - Bateria Nueva - VTV todo el 2026 - Service al Día - Motor en exelentes condiciones - Solo nafta",
   },
 ];
