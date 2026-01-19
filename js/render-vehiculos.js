@@ -2,6 +2,13 @@ import { vehiculos } from "../js/vehiculos.js";
 
 const contenedor = document.getElementById("lista-vehiculos");
 
+function generarSlug(auto) {
+  return `${auto.marca}-${auto.modelo}-${auto.anio}-${auto.id}`
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]/g, "");
+}
+
 function renderTarjetas(listaAutos, limite = null) {
   contenedor.innerHTML = "";
 
@@ -13,10 +20,11 @@ function renderTarjetas(listaAutos, limite = null) {
     const tarjeta = document.createElement("article");
     tarjeta.className = "col-6 col-md-4 mb-4";
 
+    const slug = generarSlug(auto);
+
     tarjeta.innerHTML = `
-       <a href="/pages/detalle.html?id=${
-         auto.id
-       }" style="text-decoration: none; color: inherit">
+         <a href="/pages/detalle.html?vehiculo=${slug}" style="text-decoration: none; color: inherit">
+
         <div class="card shadow-sm h-100" style="border-radius: 10px; overflow: hidden">
           <img 
             src="${portada}" 

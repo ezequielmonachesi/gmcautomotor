@@ -79,6 +79,11 @@ footer p {
   padding-bottom: 1rem;
 }
 
+.breadcrumb-padding-vehiculos {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .card-que-hacemos {
   transition: all 0.3s ease;
 }

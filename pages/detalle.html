@@ -195,7 +195,7 @@
       <section class="container">
         <div class="card shadow mb-4 border-0 vehicle-card">
           <div class="row g-0">
-            <div class="col-md-5">
+            <div class="col-md-7">
               <!-- Swiper -->
               <div class="swiper mySwiper rounded shadow-sm">
                 <div class="swiper-wrapper" id="swiper-images">
@@ -488,9 +488,17 @@
     <script type="module">
       import { vehiculos } from "../js/vehiculos.js";
 
-      // 1️⃣ ID desde la URL
+      // Obtener slug desde la URL
       const params = new URLSearchParams(window.location.search);
-      const id = parseInt(params.get("id"));
+      const slug = params.get("vehiculo");
+
+      // Obtener id desde el slug
+      function obtenerIdDesdeSlug(slug) {
+        if (!slug) return null;
+        const partes = slug.split("-");
+        return Number(partes[partes.length - 1]); // paso a numero id porque en letra no lo toma
+      }
+      const id = obtenerIdDesdeSlug(slug);
 
       // 2️⃣ Buscar vehículo
       const auto = vehiculos.find((v) => v.id === id);
