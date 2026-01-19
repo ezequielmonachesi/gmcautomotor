@@ -312,7 +312,7 @@
                 <!-- Servicios -->
                 <div class="mt-3 d-flex gap-2">
                   <button id="btn-transferencia" class="btn btn-success btn-sm">
-                    Consultar Transferencia
+                    Consultar Transferencia con GMC
                   </button>
 
                   <button
@@ -732,6 +732,14 @@
       document.getElementById("vendedor-telefono").innerHTML = `
     <a href="tel:+54${auto.vendedor.telefono}">
       ${auto.vendedor.telefono}
+    </a>
+    |
+    <a 
+      href="https://wa.me/54${auto.vendedor.telefono}?text=Hola,%20me%20interesa%20el%20${auto.marca}%20${auto.modelo}%20${auto.anio}" 
+      target="_blank"
+      class="text-success"
+    >
+      🟢 WhatsApp
     </a>
   `;
 

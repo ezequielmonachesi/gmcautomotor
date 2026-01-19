@@ -1,9 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p,
+li,
+span,
+td {
+  font-weight: 400;
+}
+
+.small {
+  font-weight: 300;
+}
+
 /*====== ancho de mis tramites (siempre diviidir en section para que todo sea fluid. =========*/
 /*======  =========*/
 .carousel {
@@ -70,7 +91,7 @@ footer p {
 .div-vehiculo {
   margin-top: 7rem;
 }
-#gmc_logo_plantaVerificadora{
+#gmc_logo_plantaVerificadora {
   width: 20rem;
 }
 
@@ -151,7 +172,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: center !important;
   }
-  #gmc_logo_plantaVerificadora{
-  width: 16rem;
-}
+  #gmc_logo_plantaVerificadora {
+    width: 16rem;
+  }
 }
