@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -182,7 +182,13 @@
             <li class="breadcrumb-item">
               <a href="./vehiculos.html">Vehículos</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Detalle</li>
+            <li
+              class="breadcrumb-item active"
+              aria-current="page"
+              id="breadcrumb-auto"
+            >
+              Detalle
+            </li>
           </ol>
         </nav>
       </section>
@@ -495,6 +501,10 @@
         throw new Error("Vehículo no encontrado");
       }
 
+      // 🧭 Breadcrumb dinámico con nombre del vehículo
+      const breadcrumbAuto = document.getElementById("breadcrumb-auto");
+      breadcrumbAuto.textContent = `${auto.marca} ${auto.modelo} ${auto.anio}`;
+
       document.addEventListener("DOMContentLoaded", () => {
         const telefonoWhatsApp = "5493816345999"; // código país incluido
 
@@ -508,7 +518,7 @@
           }
 
           const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(
-            mensaje
+            mensaje,
           )}`;
           window.open(url, "_blank");
         });
@@ -523,7 +533,7 @@
           }
 
           const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(
-            mensaje
+            mensaje,
           )}`;
           window.open(url, "_blank");
         });
@@ -634,19 +644,17 @@
   `;
       }
 
-      document.querySelector(
-        ".card-title"
-      ).textContent = `${auto.marca} ${auto.modelo} ${auto.anio}`;
+      document.querySelector(".card-title").textContent =
+        `${auto.marca} ${auto.modelo} ${auto.anio}`;
 
-      document.querySelector(
-        ".precio-auto"
-      ).textContent = `$${auto.precio.toLocaleString("es-AR")}`;
+      document.querySelector(".precio-auto").textContent =
+        `$${auto.precio.toLocaleString("es-AR")}`;
 
       document.getElementById("marca").textContent = auto.marca;
       document.getElementById("modelo").textContent = auto.modelo;
       document.getElementById("anio").textContent = auto.anio;
       document.getElementById("km").textContent = `${auto.km.toLocaleString(
-        "es-AR"
+        "es-AR",
       )} km`;
 
       /* ===============================
@@ -723,12 +731,11 @@
      💬 WHATSAPP
   =============================== */
       const msj = encodeURIComponent(
-        `Hola, me interesa el ${auto.marca} ${auto.modelo} ${auto.anio}. ¿Sigue disponible?`
+        `Hola, me interesa el ${auto.marca} ${auto.modelo} ${auto.anio}. ¿Sigue disponible?`,
       );
 
-      document.getElementById(
-        "btn-wpp"
-      ).href = `https://wa.me/54${auto.vendedor.telefono}?text=${msj}`;
+      document.getElementById("btn-wpp").href =
+        `https://wa.me/54${auto.vendedor.telefono}?text=${msj}`;
 
       /* ===============================
 💬 WHATSAPP GMC PARA INFORMES Y TRANSFERENCIA
@@ -747,7 +754,7 @@
         }
 
         const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(
-          mensaje
+          mensaje,
         )}`;
         window.open(url, "_blank");
       });
@@ -763,7 +770,7 @@
         }
 
         const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(
-          mensaje
+          mensaje,
         )}`;
         window.open(url, "_blank");
       });
@@ -779,7 +786,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const tooltipTriggerList = document.querySelectorAll(
-          '[data-bs-toggle="tooltip"]'
+          '[data-bs-toggle="tooltip"]',
         );
 
         [...tooltipTriggerList].forEach((el) => {

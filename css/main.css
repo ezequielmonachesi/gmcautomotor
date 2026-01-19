@@ -70,9 +70,12 @@ footer p {
 .div-vehiculo {
   margin-top: 7rem;
 }
+#gmc_logo_plantaVerificadora{
+  width: 20rem;
+}
 
 .breadcrumb-padding {
-  padding-top: 2rem;
+  padding-top: 6rem;
   padding-bottom: 1rem;
 }
 
@@ -143,4 +146,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: center !important;
   }
+  #gmc_logo_plantaVerificadora{
+  width: 16rem;
+}
 }
